@@ -45,6 +45,8 @@ Step 7: Access you nodejs application UI from browser
 
 #### To start the application
 
+- Note: docker-compose reads env vars from `.env` file. The `.env` can be overidden by host env vars.
+
 Step 1: start mongodb and mongo-express
 
     docker-compose -f docker-compose.yaml up
