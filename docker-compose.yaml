@@ -1,8 +1,9 @@
 version: '3'
 services:
-    my-app:
-        image: 999331468001.dkr.ecr.eu-central-1.amazonaws.com/my-app:1.5.2
+    myapp:
+        #image: 999331468001.dkr.ecr.eu-central-1.amazonaws.com/my-app:1.5.2
         #image: ${aws_ecr}/my-app:1.5.1
+        image: miltosdev/dwd-app:v1.3
         ports:
             - 3000:3000
         #restart: unless-stopped
