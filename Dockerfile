@@ -8,7 +8,6 @@ RUN mkdir -p /home/app
 # COPY ./app /home/app
 COPY . /home/
 
-
 # set default dir so that next commands executes in /home/app dir
 WORKDIR /home/app
 
