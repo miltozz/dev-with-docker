@@ -1,8 +1,7 @@
 version: '3'
 services:
     myapp:
-        #image: 999331468001.dkr.ecr.eu-central-1.amazonaws.com/my-app:1.5.2
-        #image: ${aws_ecr}/my-app:1.5.1
+        #image: ${aws_ecr}/my-app:1.5.2
         image: ${app_reg_image}
         ports:
             - 3000:3000
