@@ -1,7 +1,6 @@
 version: '3'
 services:
     myapp:
-        #image: ${aws_ecr}/my-app:1.5.2
         image: ${app_reg_image}
         ports:
             - 3000:3000
