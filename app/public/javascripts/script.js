@@ -1,5 +1,7 @@
+const ip = "http://localhost:3000";
+
 (async function init() {
-  const response = await fetch("http://localhost:3000/get-profile");
+  const response = await fetch(ip + "/get-profile");
   console.log("response", response);
   const user = await response.json();
   console.log(JSON.stringify(user));
@@ -28,7 +30,7 @@ async function handleUpdateProfileRequest() {
     interests: document.getElementById("input-interests").value,
   };
 
-  const response = await fetch("http://localhost:3000/update-profile", {
+  const response = await fetch(ip + "/update-profile", {
     method: "POST",
     headers: {
       Accept: "application/json",
