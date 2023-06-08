@@ -66,5 +66,5 @@ This demo app shows a simple user profile app set up using
 ### 3. check app in url:3000
 
 ---
-Based on: [Source](https://gitlab.com/nanuchi/techworld-js-docker-demo-app)
+Based on: [techworld-js-docker-demo-app](https://gitlab.com/nanuchi/techworld-js-docker-demo-app)
 

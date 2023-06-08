@@ -1,14 +1,10 @@
 FROM node:16-alpine
 
-#ENV MONGO_DB_USERNAME=admin \
-#   MONGO_DB_PWD=password
-
 RUN mkdir -p /home/app
 
-# COPY ./app /home/app
 COPY . /home/
 
-# set default dir so that next commands executes in /home/app dir
+# set default dir
 WORKDIR /home/app
 
 # will execute npm install in /home/app because of WORKDIR

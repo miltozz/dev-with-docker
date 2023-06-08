@@ -67,7 +67,7 @@ app.post("/update-profile", function (req, res) {
       );
     }
   );
-  // Send response
+  // Send the response
   res.send(userObj);
 });
 

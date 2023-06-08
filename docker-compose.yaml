@@ -4,7 +4,7 @@ services:
         image: ${app_reg_image}
         ports:
             - 3000:3000
-        #restart: unless-stopped
+        restart: unless-stopped
     mongodb:
         image: mongo
         ports:
